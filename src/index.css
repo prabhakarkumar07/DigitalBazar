@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+* {
+  @apply font-serif;
+}
+.line-through-important {
+  text-decoration: line-through !important;
+}
+a,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+label,
+input,
+textarea {
+  @apply no-underline !important;
+}
+
+@layer base {
+  a,
+  button,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  div,
+  label,
+  input,
+  textarea {
+    @apply no-underline !important;
+  }
+}
+
+button {
+  @apply cursor-pointer;
+}
